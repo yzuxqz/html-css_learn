@@ -1255,7 +1255,7 @@ css中的又一种布局手段，它主要用来完成页面的布局，flex可�
 
 ​	5.断点
 
-![image](https://github.com/yzuxqz/html-css_learn/blame/master\assest\断点.png)
+![image](https://github.com/yzuxqz/html-css_learn/blob/master/assest/%E6%96%AD%E7%82%B9.png)
 
 # 项目中的知识点
 
