@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            margin: 100px auto;
+        }
+
+        .box {
+            margin: 0 auto;
+            width: 640px;
+            height: 440px;
+            position: relative;
+        }
+
+        .box div:nth-child(2) {
+            position: absolute;
+            top: 156px;
+            right: 192px;
+            color: #fff;
+        }
+
+        .dotted {
+            position: absolute;
+            top: 156px;
+            right: 160px;
+            width: 8px;
+            height: 8px;
+            background-color: #09f;
+            border-radius: 50%;
+        }
+
+        .box .in div[calss^="pulse"] {
+            float: left;
+            position: absolute;
+            top: 156px;
+            right: 160px;
+            width: 8px;
+            height: 8px;
+            box-shadow: 0 0 12px #009dfd;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="images/timg.jpg" alt="">
+        <div>北京</div>
+        <div class="in">
+            <div class="dotted"></div>
+            <div class="pulse1"></div>
+            <div class="pulse2"></div>
+            <div class="pulse3"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>

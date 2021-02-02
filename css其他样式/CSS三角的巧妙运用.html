@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            float: right;
+            width: 0;
+            height: 0;
+            /* border-top: 100px solid transparent;
+            border-right: 50px solid pink; */
+            /* 简写 */
+            border-color: transparent #fff transparent transparent;
+            border-style: solid;
+            border-width: 100px 50px 0 0;
+        }
+
+        .box {
+            width: 700px;
+            height: 100px;
+            line-height: 100px;
+            background-color: red;
+            border: 1px solid red;
+        }
+
+        .box .box3 {
+            float: left;
+            width: 400px;
+            height: 100px;
+        }
+
+        .box .box2 {
+            text-align: center;
+            float: left;
+            width: 300px;
+            height: 100px;
+            background-color: #fff;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <span class="box3">
+            <div class="box1"></div>
+        </span>
+        <span class="box2">23234</span>
+    </div>
+</body>
+
+</html>

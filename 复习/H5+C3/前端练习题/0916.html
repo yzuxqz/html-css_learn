@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        body {
+            font-size: 12px;
+        }
+
+        .clearfix::after,
+        .clearfix::before {
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        .login-wrapper {
+            width: 600px;
+            height: 408px;
+            margin: 100px auto;
+            background: url("./public/bg.jpg") no-repeat;
+            background-size: cover;
+        }
+
+        .login {
+            width: 466px;
+            height: 367px;
+            background-color: rgba(243, 245, 246,.5);
+            margin: 5px auto 0;
+            border-radius: 9px;
+        }
+
+        .login-logo {
+            position: relative;
+            width: 466px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            font-size: 16px;
+            font-weight: 700;
+        }
+
+        .login-logo img {
+            position: absolute;
+            top: 15px;
+            left: 150px;
+            width: 30px;
+            height: 30px;
+            margin-right: 20px;
+            vertical-align: middle;
+        }
+
+        .user-info {
+            height: 270px;
+            border-bottom: 1px solid #CCCCCC;
+        }
+
+        .user-info li:nth-child(-n+4) {
+            width: 466px;
+            height: 36px;
+            text-align: center;
+        }
+
+        .user-info li:nth-child(5) {
+            margin: 5px 0 15px 0;
+        }
+
+        .user-info li:nth-child(5) span {
+            float: left;
+        }
+
+        .user-info li label {
+            font-size: 12px;
+        }
+
+        .user-info li #username,
+        .user-info li #password,
+        .user-info li #re-password,
+        .user-info li #email {
+            box-sizing: border-box;
+            width: 238px;
+            height: 21px;
+            outline: none;
+            font-size: 12px;
+            padding-left:1em;
+            border: 1px solid #e6e9e9;
+        }
+
+        .man,
+        .woman {
+            float: left;
+            margin-right: 17px;
+        }
+
+        .gender {
+            float: left;
+            width: 48px;
+            height: 16px;
+            text-align-last: justify;
+            margin-left: 81px;
+        }
+
+        .job-wrapper {
+            margin: 0 0 15px 81px;
+        }
+
+        #job-choose {
+            outline: none;
+            width: 235px;
+            height: 18px;
+            font-size: 12px;
+        }
+
+        .hobbies-wrapper {
+            margin-left: 81px;
+        }
+
+        .finish {
+            height: 37px;
+        }
+
+        .register {
+            width: 48px;
+            height: 17px;
+            border: 1px solid #CCCCCC;
+            font-size: 12px;
+            margin: 0 20px 0 175px;
+        }
+
+        .reset {
+            width: 48px;
+            height: 17px;
+            border: 1px solid #CCCCCC;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .info {
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="login-wrapper clearfix">
+    <div class="login">
+        <div class="login-logo">
+            <img src="./public/logo.png" alt="">
+            <span>用户注册</span>
+        </div>
+        <form action="#">
+            <ul class="user-info">
+                <li>
+                    <label for="username">用户名称</label>：
+                    <input type="text" id="username" placeholder="请输入您的用户名！">
+                </li>
+                <li>
+                    <label for="password">登录密码</label>：
+                    <input type="password" id="password" placeholder="请输入您的用户名！">
+                </li>
+                <li>
+                    <label for="re-password">重复密码</label>：
+                    <input type="password" id="re-password" placeholder="请输入您的用户名！">
+                </li>
+                <li>
+                    <label for="email">电子邮箱</label>：
+                    <input type="email" id="email" placeholder="请输入您的用户名！">
+                </li>
+                <li class="clearfix">
+                    <span class="gender">性别</span>
+                    <span>：</span>
+                    <div class="man">
+                        <input type="radio" name="gender" value="1">&nbsp男
+                    </div>
+                    <div class="woman">
+                        <input type="radio" name="gender" value="0">&nbsp女
+                    </div>
+                </li>
+                <li class="job-wrapper">
+                    <span class="job">职&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp业</span>
+                    <span>：</span>
+                    <select name="job-choose" id="job-choose" multiple size="1">
+                            <option>学生</option>
+                            <option>老师</option>
+                    </select>
+                </li>
+                <li class="hobbies-wrapper">
+                    <span>爱&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp好：</span>
+                    <textarea name="hobbies" id="hobbies" cols="31" rows="3"></textarea>
+                </li>
+            </ul>
+            <div class="finish">
+                <input type="submit" class="register" value="注册">
+                <input class="reset" type="reset">
+            </div>
+        </form>
+    </div>
+    <div class="info">
+        Copyright @2017 轻实训版权所有
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            background-color: red;
+            width: 500px;
+            height: 50px;
+            /* 把行内元素 转为 块级元素 */
+            display: block;
+        }
+
+        div {
+            /* width: 300px;
+            height: 100px; */
+            background-color: pink;
+            /* 块级元素 转为 行内元素 */
+            display: inline;
+        }
+        span{
+            width: 100px;
+            height: 300px;
+            background-color:skyblue;
+            /* 行内元素转为行内块元素 */
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="http://www.baidu.com" target="_blank">行内元素转为块级元素</a>
+    <div>块级元素转为行内元素</div>
+    <span>行内元素转为行内块元素</span>
+</body>
+
+</html>

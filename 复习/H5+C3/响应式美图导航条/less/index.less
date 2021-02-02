@@ -1,0 +1,171 @@
+a {
+  text-decoration: none;
+  color: #ffffff;
+
+  &:hover {
+    color: rgb(197, 196, 196);
+  }
+}
+
+.top-bar-wrapper {
+  background-color: #000000;
+}
+
+//导航条
+.top-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 48px;
+  padding: 0 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+//设置左侧导航图标
+//.left-menu {
+//  &:hover{
+//    .nav {
+//      display: block;
+//    }
+//  }
+
+//设置菜单
+.nav {
+  display: none;
+  position: absolute;
+  top: 48px;
+  background-color: #000;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 50px;
+
+  li {
+    width: 80%;
+    margin: 0 auto;
+    border-bottom: 1px solid #757474;
+
+    a {
+      display: block;
+      line-height: 44px;
+      font-size: 14px;
+      border-bottom: 1px solid #4e4e4e;
+    }
+
+    &:last-child a {
+      display: inline-block;
+    }
+
+    span {
+      color: #ffffff;
+      font-size: 14px;
+    }
+  }
+}
+
+.menu-item {
+  width: 18px;
+  height: 48px;
+  position: relative;
+
+  &:hover {
+    .nav {
+      display: block;
+    }
+  }
+
+  li {
+    position: absolute;
+    width: 18px;
+    height: 1px;
+    background-color: #ffffff;
+    transform-origin: left;
+    transition: all .5s;
+  }
+
+  li:nth-child(1) {
+    top: 18px;
+
+  }
+
+  li:nth-child(2) {
+    top: 24px;
+  }
+
+  li:nth-child(3) {
+    top: 30px;
+  }
+
+  //鼠标移入以后的效果
+  &:hover {
+    li:nth-child(1) {
+      top: 18px;
+      transform: rotate(42deg);
+    }
+
+    li:nth-child(2) {
+      top: 24px;
+      opacity: 0;
+    }
+
+    li:nth-child(3) {
+      top: 30px;
+      transform: rotate(-42deg);
+    }
+  }
+}
+
+.logo {
+  a {
+    display: block;
+    width: 122px;
+    height: 32px;
+    background-image: url("../public/dff63979.sprites-index@2x.png");
+    background-size: 400px 400px;
+  }
+}
+
+//媒体查询
+@media only screen {
+  @media (min-width: 768px) {
+    .left-menu {
+      order: 2;
+      flex: auto;
+
+      .nav {
+        display: flex;
+        position: static;
+        padding: 0;
+        justify-content: space-around;
+
+        li {
+          width: auto;
+          border-bottom: none;
+          margin: 0;
+
+          a {
+            line-height: 48px;
+            border-bottom: none;
+          }
+
+          span {
+            display: none;
+          }
+        }
+      }
+
+      .menu-item {
+        display: none;
+      }
+    }
+
+    .logo {
+      order: 1;
+    }
+
+    .user-info {
+      order: 3;
+    }
+  }
+}

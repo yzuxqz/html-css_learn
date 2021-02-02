@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1.单行文本溢出显示省略号 满足三个条件*/
+        .box1 {
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+            /* 1.强制一行内显示文本 */
+            white-space: nowrap;
+            /* 2.超出部分隐藏 */
+            overflow: hidden;
+            /* 3.文字用省略号替代超出部分 */
+            text-overflow: ellipsis;
+        }
+
+        .box2 {
+            width: 50px;
+            height: 50px;
+            background-color: pink;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* 弹性盒子模型演示 */
+            display: -webkit-box;
+            /* 限制在一个块元素显示的文本行数 */
+            -webkit-line-clamp: 2;
+            /* 设置或检索伸缩盒对象的子元素的排列方式 */
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">fjidjfsfhshfksjdfhskhfskhdfjkshdkfhadfiyafghaeh</div>
+    <div class="box2">fjidjfsfhshfksjdfhskhfskhdfjkshdkfhadfiyafghaeh</div>
+</body>
+
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .hotSpot {
+            width: 1268px;
+            height: 391px;
+            margin: 100px auto;
+            box-shadow: 0 0 10px rgba(0,0,0,.3);
+        }
+
+
+        .top-wrapper {
+            box-sizing: border-box;
+            height: 46px;
+            padding: 0 14px;
+        }
+
+        .hot {
+            font-size: 18px;
+            line-height: 46px;
+        }
+
+        .bar {
+            float: right;
+        }
+
+        .bar li {
+            float: left;
+            width: 31px;
+            height: 5px;
+            margin: 20px 7px 0 0;
+            background-color: #e8e9ea;
+        }
+
+        .main {
+            padding-top: 20px;
+        }
+
+        .items li {
+            float: left;
+            position: relative;
+            width: 620px;
+            height: 136px;
+            margin: 0 0 32px 14px;
+            transition: all .5s;
+        }
+        .items li:hover{
+            transform: translateY(-10px);
+            box-shadow: 0 0 10px rgba(0,0,0,.3);
+        }
+        .cover {
+            width: 230px;
+            height: 136px;
+            overflow: hidden;
+        }
+
+        .cover img {
+            width: 232px;
+            height: 136px;
+            vertical-align: middle;
+        }
+
+        .content {
+            box-sizing: border-box;
+            width: 390px;
+            height: 136px;
+            padding:8px 0 0 22px;
+        }
+
+        .items li > div {
+            float: left;
+        }
+        .more-info{
+            font-size: 14px;
+            width: 336px;
+            margin-top: 15px;
+            line-height: 23px;
+        }
+        .content-bottom{
+            position: absolute;
+            bottom: 0;
+            height: 24px;
+            width: 360px;
+        }
+        .icon{
+            float: right;
+        }
+        .wx{
+            color:#5fac48;
+        }
+        .xl{
+            color:#d4383a;
+        }
+        .clock{
+            font-size: 12px;
+        }
+        .date{
+            font-size: 12px;
+        }
+        .bar-current{
+            width: 60%;
+            height: 100%;
+            background-color: #ff6a00;
+        }
+    </style>
+</head>
+<body>
+<div class="hotSpot">
+    <div class="top-wrapper">
+        <span class="hot">热点资讯</span>
+        <ul class="bar">
+            <li>
+                <div class="bar-current"></div>
+            </li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="main">
+        <ul class="items">
+            <li>
+                <div class="cover">
+                    <img src="./public/091701.png" alt="">
+                </div>
+                <div class="content">
+                    <h4>如果故障选择了你...</h4>
+                    <p class="more-info">发生故障的那一刻不是由你来选择的，而是它来选择你，你能做的就是为之做好准备。</p>
+                    <div class="content-bottom">
+                        <i class="iconfont clock">&#xe638;</i>
+                        <span class="date">2020-09-17</span>
+                        <div class="icon">
+                            <i class="iconfont wx">&#xe683;</i>
+                            <i class="iconfont xl">&#xe67b;</i>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cover">
+                    <img src="./public/091701.png" alt="">
+                </div>
+                <div class="content">
+                    <h4>如果故障选择了你...</h4>
+                    <p class="more-info">发生故障的那一刻不是由你来选择的，而是它来选择你，你能做的就是为之做好准备。</p>
+                    <div class="content-bottom">
+                        <i class="iconfont clock">&#xe638;</i>
+                        <span class="date">2020-09-17</span>
+                        <div class="icon">
+                            <i class="iconfont wx">&#xe683;</i>
+                            <i class="iconfont xl">&#xe67b;</i>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cover">
+                    <img src="./public/091701.png" alt="">
+                </div>
+                <div class="content">
+                    <h4>如果故障选择了你...</h4>
+                    <p class="more-info">发生故障的那一刻不是由你来选择的，而是它来选择你，你能做的就是为之做好准备。</p>
+                    <div class="content-bottom">
+                        <i class="iconfont clock">&#xe638;</i>
+                        <span class="date">2020-09-17</span>
+                        <div class="icon">
+                            <i class="iconfont wx">&#xe683;</i>
+                            <i class="iconfont xl">&#xe67b;</i>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="cover">
+                    <img src="./public/091701.png" alt="">
+                </div>
+                <div class="content">
+                    <h4>如果故障选择了你...</h4>
+                    <p class="more-info">发生故障的那一刻不是由你来选择的，而是它来选择你，你能做的就是为之做好准备。</p>
+                    <div class="content-bottom">
+                        <i class="iconfont clock">&#xe638;</i>
+                        <span class="date">2020-09-17</span>
+                        <div class="icon">
+                            <i class="iconfont wx">&#xe683;</i>
+                            <i class="iconfont xl">&#xe67b;</i>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

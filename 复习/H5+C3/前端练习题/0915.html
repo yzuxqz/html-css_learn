@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../iconfont/iconfont.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        img {
+            vertical-align: top;
+        }
+
+        .main {
+            width: 730px;
+            height: 834px;
+            margin: 100px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        }
+
+        .top-wrapper {
+            height: 70px;
+            width: 730px;
+        }
+
+        .top-left {
+            height: 70px;
+            float: left;
+            line-height: 70px;
+        }
+
+        .avatar {
+            float: left;
+            box-sizing: border-box;
+            width: 50px;
+            height: 50px;
+            margin: 10px 15px;
+            border-radius: 50%;
+            background-color: blue;
+            padding: 1px;
+            border: 2px solid #df3b84;
+        }
+
+        .top-right {
+            float: right;
+            margin: 20px 20px 0 0;
+            font-weight: 700;
+        }
+
+        .cover {
+            width: 710px;
+            height: 466px;
+            background-color: black;
+            margin: 0 auto;
+            clear: both;
+        }
+
+        .cover img {
+            height: 466px;
+        }
+
+        .collect {
+            position: relative;
+            clear: both;
+            height: 60px;
+            margin-top: 14px;
+        }
+
+        .collect-left {
+            float: left;
+        }
+
+        .collect-left i,
+        .collect-right i {
+            font-size: 30px;
+        }
+
+        .collect-right {
+            float: right;
+        }
+
+        .circles {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 45px;
+            height: 5px;
+            margin: 5px auto;
+        }
+
+        .circles li {
+            float: left;
+            width: 5px;
+            height: 5px;
+            margin-right: 5px;
+            background-color: #a8a8a8;
+            border-radius: 50%;
+        }
+
+        .circles li:last-child {
+            margin-right: 0;
+        }
+
+        .zan-total {
+            position: absolute;
+            bottom: 0;
+            left: 4px;
+            font-weight: 700;
+        }
+
+        .comment {
+            box-sizing: border-box;
+            height: 160px;
+            margin-top: 74px;
+            padding: 8px 0 0 14px;
+        }
+
+        .comment-num a {
+            color: #a5a5a5;
+            font-size: 16px;
+        }
+
+        .comment p {
+            margin-bottom: 7px;
+        }
+
+        .day {
+            color: #a5a5a5;
+        }
+
+        .add-comment {
+            height: 65px;
+            width: 100%;
+            border-top: 1px solid #CCCCCC;
+        }
+
+        .add-comment input {
+            float: left;
+            height: 100%;
+            border: none;
+            width: 650px;
+            outline-style: none;
+            text-indent: 15px;
+        }
+
+        .publish {
+            width: 80px;
+            height: 100%;
+            text-align: center;
+            line-height: 65px;
+            color: #cbe9fc;
+            float: right;
+            border: none;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="main">
+    <!--    顶部-->
+    <div class="top-wrapper">
+        <div class="top-left">
+            <div class="avatar"></div>
+            <sapn>cristiano</sapn>
+        </div>
+        <div class="top-right">...</div>
+    </div>
+    <!--    封面-->
+    <div class="cover">
+        <!--        图片-->
+        <ul>
+            <li>
+                <img src="./public/图片2.png" alt="">
+            </li>
+        </ul>
+        <!--        收藏-->
+        <div class="collect">
+            <div class="collect-left">
+                <i class="iconfont">&#xe669;</i>
+                <i class="iconfont">&#xe655;</i>
+                <i class="iconfont">&#xe642;</i>
+            </div>
+
+            <ul class="circles">
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+            <div class="collect-right">
+                <i class="iconfont">&#xe640;</i>
+            </div>
+            <p class="zan-total">634.6万&nbsp次赞</p>
+        </div>
+    </div>
+    <!--        显示评论-->
+    <div class="comment">
+        <p>cristiano What a beautiful way to reach my goal 100!</p>
+        <p class="comment-num">
+            <a href="#">
+                全部 4.1万 条评论
+            </a>
+        </p>
+        <p>
+            cpp.materials
+        </p>
+        <p>
+            hhpjed123 Awesome
+        </p>
+        <p class="day">
+            4天前
+        </p>
+    </div>
+    <!--        添加评论-->
+    <div class="add-comment">
+        <input type="text" placeholder="添加评论...">
+        <div class="publish">发布</div>
+    </div>
+</div>
+</body>
+</html>

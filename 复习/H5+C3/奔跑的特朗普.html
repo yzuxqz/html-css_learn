@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box1{
+            width: 100px;
+            height: 100px;
+            margin:0 auto;
+            background-image: url("./public/trump_run.png");
+            animation:run 0.5s steps(6) infinite;
+        }
+        @keyframes run {
+            from{
+                background-position: 0 0;
+            }
+            to{
+                background-position: 600px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="box1"></div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .box {
+            width: 870px;
+            height: 441px;
+            background-color: red;
+            margin: 100px auto;
+        }
+
+        .box1 {
+            float: left;
+            width: 159px;
+            height: 441px;
+            background-color: green;
+
+        }
+
+        .box2 {
+            float: right;
+            width: 682px;
+            height: 441px;
+            background-color: salmon;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .box2 li {
+            float: left;
+            width: 160px;
+            height: 210px;
+            margin-right: 13px;
+            background-color: slategrey;
+        }
+
+        .box2 .forth,
+        .box2 .eight {
+            margin-right: 0;
+        }
+
+        .box2 .five,
+        .box2 .six,
+        .box2 .seven,
+        .box2 .eight {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="box1"></div>
+        <ul class="box2">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li class="forth">4</li>
+            <li class="five">5</li>
+            <li class="six">6</li>
+            <li class="seven">7</li>
+            <li class="eight">8</li>
+        </ul>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,125 @@
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+a:hover {
+  color: #c5c4c4;
+}
+.top-bar-wrapper {
+  background-color: #000000;
+}
+.top-bar {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 48px;
+  padding: 0 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav {
+  display: none;
+  position: absolute;
+  top: 48px;
+  background-color: #000;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 50px;
+}
+.nav li {
+  width: 80%;
+  margin: 0 auto;
+  border-bottom: 1px solid #757474;
+}
+.nav li a {
+  display: block;
+  line-height: 44px;
+  font-size: 14px;
+  border-bottom: 1px solid #4e4e4e;
+}
+.nav li:last-child a {
+  display: inline-block;
+}
+.nav li span {
+  color: #ffffff;
+  font-size: 14px;
+}
+.menu-item {
+  width: 18px;
+  height: 48px;
+  position: relative;
+}
+.menu-item:hover .nav {
+  display: block;
+}
+.menu-item li {
+  position: absolute;
+  width: 18px;
+  height: 1px;
+  background-color: #ffffff;
+  transform-origin: left;
+  transition: all 0.5s;
+}
+.menu-item li:nth-child(1) {
+  top: 18px;
+}
+.menu-item li:nth-child(2) {
+  top: 24px;
+}
+.menu-item li:nth-child(3) {
+  top: 30px;
+}
+.menu-item:hover li:nth-child(1) {
+  top: 18px;
+  transform: rotate(42deg);
+}
+.menu-item:hover li:nth-child(2) {
+  top: 24px;
+  opacity: 0;
+}
+.menu-item:hover li:nth-child(3) {
+  top: 30px;
+  transform: rotate(-42deg);
+}
+.logo a {
+  display: block;
+  width: 122px;
+  height: 32px;
+  background-image: url("../public/dff63979.sprites-index@2x.png");
+  background-size: 400px 400px;
+}
+@media only screen and (min-width: 768px) {
+  .left-menu {
+    order: 2;
+    flex: auto;
+  }
+  .left-menu .nav {
+    display: flex;
+    position: static;
+    padding: 0;
+    justify-content: space-around;
+  }
+  .left-menu .nav li {
+    width: auto;
+    border-bottom: none;
+    margin: 0;
+  }
+  .left-menu .nav li a {
+    line-height: 48px;
+    border-bottom: none;
+  }
+  .left-menu .nav li span {
+    display: none;
+  }
+  .left-menu .menu-item {
+    display: none;
+  }
+  .logo {
+    order: 1;
+  }
+  .user-info {
+    order: 3;
+  }
+}
+/*# sourceMappingURL=teacher_studentScore.css.map */

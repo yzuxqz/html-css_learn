@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table cellpadding="20" cellspacing="0" border="1">
+        <!-- 先确定跨行还是跨列
+            找到目标单元格写代码（列合并从左开始，行合并从右开始）
+            删除多于单元格 -->
+        <thead>
+            <tr>
+                <th></th>
+                <th colspan="2"></th>
+            </tr>
+            <tr>
+                <td rowspan="2"></td>
+                <td></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+            </tr>
+        </thead>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html {
+            perspective: 800px;
+        }
+
+        .cude {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 100px auto;
+            transform-style: preserve-3d;
+            transform: rotateX(45deg) rotateZ(45deg);
+            animation: run 15s infinite linear;
+        }
+
+        .cude > div {
+            width: 200px;
+            height: 200px;
+            opacity: .7;
+            position: absolute;
+        }
+
+        .cude img {
+            vertical-align: middle;
+        }
+
+        .left {
+            transform: rotateY(90deg) translateZ(100px);
+            transition: all 0.5s;
+        }
+
+        .right {
+            transform: rotateY(-90deg) translateZ(100px);
+            transition: all 0.5s;
+        }
+        .top {
+            transform: rotateX(90deg) translateZ(100px);
+            transition: all 0.5s;
+        }
+
+        .bottom {
+            transform: rotateX(-90deg) translateZ(100px);
+            transition: all 0.5s;
+        }
+        .front {
+            transform: rotateY(180deg) translateZ(100px);
+            transition: all 0.5s;
+        }
+
+        .behind {
+            transform: rotateY(0deg) translateZ(100px);
+            transition: all 0.5s;
+        }
+
+       .cude:hover .left {
+            transform: rotateY(90deg) translateZ(150px);
+        }
+
+        .cude:hover .right {
+            transform: rotateY(-90deg) translateZ(150px);
+        }
+        .cude:hover .top {
+            transform: rotateX(90deg) translateZ(150px);
+        }
+
+        .cude:hover .bottom {
+            transform: rotateX(-90deg) translateZ(150px);
+        }
+        .cude:hover .front {
+            transform: rotateY(180deg) translateZ(150px);
+        }
+
+        .cude:hover .behind {
+            transform: rotateY(0deg) translateZ(150px);
+        }
+        @keyframes run {
+            from{
+                transform: rotateX(0) rotateZ(0);
+            }
+            to{
+                transform: rotateX(1turn) rotateZ(1turn);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="cude">
+    <div class="left">
+        <img src="./public/1.jpg" alt="">
+    </div>
+    <div class="right">
+        <img src="./public/2.jpg" alt="">
+    </div>
+    <div class="top">
+        <img src="./public/3.jpg" alt="">
+    </div>
+    <div class="bottom">
+        <img src="./public/4.jpg" alt="">
+    </div>
+    <div class="front">
+        <img src="./public/5.jpg" alt="">
+    </div>
+    <div class="behind">
+        <img src="./public/6.jpg" alt="">
+    </div>
+</div>
+</body>
+</html>

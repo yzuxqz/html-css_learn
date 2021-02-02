@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        /* 伪元素是行内元素  权重为1*/
+        /* 权重2 */
+        div::before{
+            content: '我';
+        }
+        div::after{
+            content: '许钱洲';
+        }
+    </style>
+</head>
+<body>
+    <div >shi</div>
+</body>
+</html>

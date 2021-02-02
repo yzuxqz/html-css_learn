@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: blueviolet;
+            font: 12px/20px "Microsoft Yahei";
+            /* 行高也可以不跟单位 1.5是当前元素大小的1.5倍*/
+            font: 12px/1.5 "Microsoft Yahei";
+        }
+        div{
+            /* 所以当前行高是21像素 */
+            font-size: 14px;
+        }
+        
+        p{
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div>行高的继承</div>
+    <p>行高的继承</p>
+    <ul>
+        <li>继承body,行高为12*1.5</li>
+    </ul>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 属性选择器  权重为10*/
+        /* 根据属性选 */
+        input[value] {
+            color: pink;
+        }
+
+        /* 根据属性和值选  权重11*/
+        input[type="password"] {
+            color: powderblue;
+        }
+
+        /* 属性以。。开头 用^=*/
+        div[class^="icon"] {
+            color: blue;
+        }
+
+        /* 属性以。。结尾 用$= */
+        /* 属性包含。。 用*= */
+    </style>
+</head>
+
+<body>
+    <input type="text" value="请输入用户名">
+    <input type="text">
+    <input type="text">
+    <input type="password">
+    <div class="icon1">5</div>
+    <div class="icon2">5</div>
+    <div class="icon3">5</div>
+    <div class="icon4">5</div>
+    <div class="icon5">5</div>
+</body>
+
+</html>

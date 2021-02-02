@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="./重置样式表/reset.css">
+    <link rel="stylesheet" href="./iconfont/iconfont.css">
+    <style>
+        .outer {
+            width: 240px;
+            margin: 100px auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+        }
+
+        .img-wrapper img {
+            width: 100%;
+            vertical-align: top;
+        }
+
+        .info {
+            padding: 0 18px;
+            color: #acaaaa;
+            font-size: 14px;
+        }
+
+        .info .title {
+            color: #717171;
+            font-size: 18px;
+            margin: 13px 0 15px 0;
+        }
+
+        .info .categroy::before {
+            font-family: "iconfont", serif;
+            content: "\e647";
+        }
+
+        .info .intro {
+            margin: 18px 4px;
+            line-height: 20px;
+        }
+
+        .star-wrapper {
+            height: 46px;
+            border-top: 1px solid #e9e9e9;
+            position: relative;
+            color: #dddddd;
+            padding: 0 16px;
+        }
+        .star-wrapper .light{
+            color: #b9cb41;
+        }
+        .star-wrapper span{
+            float: right;
+            height: 100%;
+            line-height: 46px;
+        }
+
+        .star{
+            float: left;
+            height: 46px;
+            line-height: 46px;
+        }
+
+        .star li{
+            float: left;
+        }
+    </style>
+</head>
+<body>
+<!--外层容器-->
+<div class="outer">
+    <!--    图片容器-->
+    <div class="img-wrapper">
+        <img src="./public/Pinball---Grid-Style-Blog-PSD---cssauthor.jpg" alt="">
+    </div>
+    <!--    内容容器-->
+    <div class="info">
+        <h2 class="title">动画电影</h2>
+        <h3 class="categroy">
+            动画
+        </h3>
+        <p class="intro">
+            这是一部迪士尼动画电影，非常好看
+        </p>
+    </div>
+    <!--    评分容器-->
+    <div class="star-wrapper">
+        <!--       创建星星-->
+        <ul class="star">
+            <li class="iconfont light">&#xe66c;</li>
+            <li class="iconfont light">&#xe66c;</li>
+            <li class="iconfont ">&#xe66c;</li>
+            <li class="iconfont ">&#xe66c;</li>
+        </ul>
+        <!--        创建-->
+        <span class="iconfont">&#xe67b;</span>
+
+    </div>
+</div>
+</body>
+</html>

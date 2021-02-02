@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* vertical-align:baseline|top|middle|bottom */
+        img {
+            /* 一般使用行内块元素搭配 */
+            vertical-align: bottom;
+            vertical-align: middle;
+        }
+
+        textarea {
+            vertical-align: middle;
+        }
+
+        div {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 默认基线对齐 -->
+    <img src="案例/images/img.png" alt="">666666pnk
+    <br>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    请你留言
+    <br>
+    <div>
+        <!-- 空白缝隙是因为基线对齐 -->
+        <!-- 方法1:使用vertical-align
+        方法2:改img为块级元素 -->
+        <img src="案例/images/img.png" alt="">pink
+
+    </div>
+</body>
+
+</html>

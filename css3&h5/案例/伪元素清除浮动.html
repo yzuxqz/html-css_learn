@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .clearfix:after {
+            content: '';
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+
+        .box {
+            width: 600px;
+            background-color: pink;
+        }
+
+        .box div:nth-child(n) {
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box clearfix">
+        <div>1</div>
+        <div>2</div>
+    </div>
+
+</body>
+
+</html>

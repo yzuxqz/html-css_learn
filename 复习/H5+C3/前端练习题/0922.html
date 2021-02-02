@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="./public/favicon.ico">
+    <title>西游记</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .journeyToTheWest-wrapper{
+            height: 786px;
+            background:url("./public/bac.webp");
+            animation: move 5s linear infinite;
+        }
+        .journeyToTheWest{
+            position: absolute;
+            left: 0;
+            right: 0;
+            width: 780px;
+            height: 240px;
+            margin: 500px auto;
+            overflow: hidden;
+        }
+        .journeyToTheWest li{
+            float: left;
+        }
+        ul .sunWuKong{
+            width: 200px;
+            height: 160px;
+            animation: run_1600 1s steps(8) infinite;
+            background:url("./public/west_01.png");
+        }
+        ul .zhuBaJie{
+            width: 200px;
+            height: 180px;
+            animation: run_1600 1s steps(8) infinite;
+            background: url("./public/west_02.png");
+        }
+        ul .tangSen{
+            width: 170px;
+            height: 240px;
+            animation: run_1360 1s steps(8) infinite;
+            background: url("./public/west_03.png");
+        }
+        ul .shaSen{
+            width: 210px;
+            height: 200px;
+            animation: run_1680 1s steps(8) infinite;
+            background: url("./public/west_04.png");
+        }
+        @keyframes run_1600 {
+            from{
+                background-position: 0 0;
+            }
+            to{
+                background-position: 1600px 0;
+            }
+        }
+        @keyframes run_1360 {
+            from{
+                background-position: 0 0;
+            }
+            to{
+                background-position: 1360px 0;
+            }
+        }
+        @keyframes run_1680 {
+            from{
+                background-position: 0 0;
+            }
+            to{
+                background-position: 1680px 0;
+            }
+        }
+        @keyframes move {
+            from{
+
+            }
+            to{
+                background-position: 1920px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="journeyToTheWest-wrapper">
+    <ul class="journeyToTheWest" >
+        <li class="sunWuKong"></li>
+        <li class="zhuBaJie"></li>
+        <li class="tangSen"> </li>
+        <li class="shaSen"></li>
+    </ul>
+</div>
+</body>
+</html>

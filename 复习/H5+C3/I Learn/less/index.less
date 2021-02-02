@@ -1,0 +1,146 @@
+.w {
+  width: 693/40rem;
+  margin: 0 auto;
+}
+
+html {
+  //设置rem比值：1rem=40px
+  font-size: 100vw/750*40;
+  background-color: #eff0f4;
+}
+
+a {
+  text-decoration: none;
+}
+
+.top-bar:extend(.w) {
+  display: flex;
+  height: 175/40rem;
+  //设置对齐方式
+  justify-content: space-between;
+  //垂直居中
+  align-items: center;
+
+  a {
+    color: #24253d;
+    font-size: 50/40rem;
+  }
+
+  i {
+    color: #999999;
+    font-size: 50/40rem;
+  }
+}
+
+//设置banner
+.banner:extend(.w) {
+  img {
+    width: 100%;
+  }
+}
+
+.menu:extend(.w) {
+  display: flex;
+  justify-content: space-between;
+  //主轴对齐
+  flex-flow: row wrap;
+  //辅轴对齐
+  align-content: space-evenly;
+  height: 330/40rem;
+
+  a {
+    width: 327/40rem;
+    height: 104/40rem;
+    color: white;
+    border-radius: 10/40rem;
+    text-align: center;
+    line-height: 104/40rem;
+    font-size: 16px;
+
+    i {
+      margin: 0 10px 0 5px;
+    }
+  }
+
+  .courses {
+    background-color: #f97053;
+  }
+
+  .teacher {
+    background-color: #c85fff;
+  }
+
+  .script {
+    background-color: #ff3971;
+  }
+
+  .download {
+    background-color: #1d92ff;
+  }
+}
+
+.course-list:extend(.w) {
+  height: 394/40rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  margin-bottom: 46/40rem;
+  .title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    h2 {
+      font-size: 33/40rem;
+      color: #24253d;
+      border-left: 2px solid #3a84ff;
+      padding-left: 6px;
+    }
+    a{
+      font-size: 28/40rem;
+      color: #656565;
+    }
+  }
+}
+.item-list{
+  display: flex;
+  overflow: auto;
+}
+.item{
+  display: flex;
+  flex: none;
+  flex-flow: column;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+  width: 320/40rem;
+  height: 324/40rem;
+  background-color: #fff;
+  box-shadow: 0 0 5/40rem rgba(0,0,0,.3);
+  border-radius: 10/40rem;
+  padding: 0 15/40rem;
+  margin-right: 24/40rem;
+  img{
+    width: 100%;
+    vertical-align: top;
+  }
+  .course-title{
+    font-size: 29/40rem;
+    color: #24253d;
+  }
+  .user-info{
+    display: flex;
+    align-items: center;
+  }
+  .avatar{
+    width: 42/40rem;
+    height: 42/40rem;
+    img{
+      width: 100%;
+    }
+  }
+  .nickname{
+    font-size: 24/40rem;
+    color: #969393;
+    margin-left: 10/40rem;
+  }
+}

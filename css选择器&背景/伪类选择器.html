@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 按顺序写 */
+        /* 未访问的链接 
+        实际开发写法
+        a{
+        }
+        a:hover{
+        }*/
+        a:link {
+            color: #333333;
+            text-decoration: none;
+        }
+
+        /* 已经访问过的链接 */
+        a:visited {
+            color: red;
+        }
+
+        /* 选择鼠标经过的那个链接 */
+        a:hover {
+            color: skyblue;
+        }
+
+        /* 鼠标按下还没有送开 */
+        a:active {
+            color: greenyellow;
+        }
+
+        /* focus伪类选择器用于获取焦点的表单元素,一般用于input标签*/
+        input:focus {
+            background-color: pink;
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="#">小猪佩奇</a>
+    <a href="http://xcxcxc.com">位置</a>
+    <a href="emment语法使用.html">小猪佩奇</a>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+</body>
+
+</html>

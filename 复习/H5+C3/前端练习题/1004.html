@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../重置样式表/reset.css">
+    <style>
+
+        .wrapper {
+            box-sizing: border-box;
+            width: 400px;
+            height: 400px;
+            margin: 100px auto;
+            background-color: #fefbf4;
+            padding: 25px;
+        }
+
+        .lottery li {
+            width: 100px;
+            height: 100px;
+            margin-right: 25px;
+            margin-bottom: 25px;
+            background-color: #feeed5;
+        }
+
+        .lottery li:nth-child(3),
+        .lottery li:nth-child(4),
+        .lottery li:nth-child(7) {
+            margin-right: 0;
+        }
+
+        .lottery li:nth-child(-n+3) {
+            float: left;
+        }
+
+        .lottery li {
+            float: right;
+        }
+
+        .lottery .join {
+            border-radius: 50%;
+            background-color: #a06b38;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            let lis = document.querySelectorAll('.lottery li:not(:nth-child(5))')
+            let join = document.querySelector('.join')
+            let j = 0
+            let n = 150
+            let m = 10
+            let timer
+            join.addEventListener('click', function () {
+                timer = setInterval(run, n)
+            })
+
+            function run() {
+                n -= m
+                if (n === 50) {
+                    m = 1
+                    clearInterval(timer)
+                    timer = setInterval(run, n)
+                }
+                if (n === 10) {
+                    n = 200
+                    m = 1
+                    clearInterval(timer)
+                    timer = setInterval(run, n)
+                }
+                if (n === getRandom(8,10)*19) {
+                    clearInterval(timer)
+                    n=150
+                    m=10
+                }
+                if (j === 7) {
+                    j = 4
+                } else if (j > 3) {
+                    j++
+                }
+                for (let i = 0; i < lis.length; i++) {
+                    lis[i].style.backgroundColor = "#feeed5"
+                }
+                lis[j].style.backgroundColor = "#dd7246"
+                if (j <= 3) {
+                    j++
+                } else if (j === 4) {
+                    j = 0
+                }
+            }
+
+            function getRandom(min, max) {
+                return Math.floor(Math.random() * (max - min + 1)) + min;
+            }
+        }
+
+    </script>
+</head>
+<body>
+<div class="wrapper">
+    <ul class="lottery">
+        <li>0</li>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li class="join"></li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+    </ul>
+</div>
+</body>
+</html>

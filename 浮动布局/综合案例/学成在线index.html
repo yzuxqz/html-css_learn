@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>学成在线首页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 头部区域 -->
+    <div class="header w">
+        <img class="logo" src="images/logo.png" alt="logo">
+        <!-- 实际开发中，导航栏用（li + a）的做法 
+        如果直接用a，搜索引擎容易识别为关键字堆砌，影响2网站排名-->
+        <!-- 导航栏模块 -->
+        <div class="nav">
+            <ul>
+                <!-- 注意
+                1.让导航栏一行显示，给li加浮动，因为li是块级元素，需要一行显示
+                2.nav可以不给宽度，因为nav是行内块元素，将来可以继续添加其余文字
+                3.因为导航栏文字不一样多，所以用padding给a左右内边距程撑开盒子，而不是指定宽度 -->
+                <li> <a href="#">首页</a></li>
+                <li> <a href="#">课程</a></li>
+                <li> <a href="#">职业规划</a></li>
+            </ul>
+        </div>
+        <!-- 搜索模块 -->
+        <div class="search">
+            <!-- 注意
+                行内块元素中间有缝隙，要用浮动 -->
+            <input class="input" type="text" placeholder="输入关键字">
+            <button></button>
+        </div>
+        <!-- 头像模块 -->
+        <div class="user">
+            <img src="images/user.png" alt="">
+            qq-name
+        </div>
+    </div>
+
+    <!-- banner区域 -->
+    <div class="banner">
+        <!-- 版心 -->
+        <div class="w">
+            <!--左边 -->
+            <div class="subnav">
+                <ul>
+                    <li><a href="#">前端开发<span>&gt;</span></a></li>
+                    <li><a href="#">后端开发<span>&gt;</span></a></li>
+                    <li><a href="#">移动开发<span>&gt;</span></a></li>
+                    <li><a href="#">人工智能<span>&gt;</span></a></li>
+                    <li><a href="#">商业预测<span>&gt;</span></a></li>
+                    <li><a href="#">云计算&大数据<span>&gt;</span></a></li>
+                    <li><a href="#">运维&测试<span>&gt;</span></a></li>
+                    <li><a href="#">UI设计<span>&gt;</span></a></li>
+                    <li><a href="#">产品<span>&gt;</span></a></li>
+                </ul>
+            </div>
+            <!-- 右边 -->
+            <div class="course">
+                <h2>我的课程表</h2>
+                <div class="bd">
+                    <ul>
+                        <li>
+                            <h4>继续学习 程序语言设计</h4>
+                            <p>正在学习-使用对象</p>
+                        </li>
+                        <li>
+                            <h4>继续学习 程序语言设计</h4>
+                            <p>正在学习-使用对象</p>
+                        </li>
+                        <li>
+                            <h4>继续学习 程序语言设计</h4>
+                            <p>正在学习-使用对象</p>
+                        </li>
+                    </ul>
+                    <a href="#">全部课程</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 精品推荐区域 -->
+    <div class="goods w">
+        <h3>精品推荐</h3>
+        <div>
+            <ul>
+                <li><a href="#">JQuery</a></li>
+                <li><a href="#">Spark</a></li>
+                <li><a href="#">MySQL</a></li>
+                <li><a href="#">JavaWeb</a></li>
+                <li><a href="#">MySQl</a></li>
+                <li><a href="#">JavaWeb</a></li>
+            </ul>
+        </div>
+        <a class="mod" href="#">修改兴趣</a>
+    </div>
+
+    <!-- box核心区域 -->
+    <div class="box w">
+        <div class="box-hd">
+            <h3>精品推荐</h3>
+            <a href="#">查看全部</a>
+        </div>
+        <div class="box-bd">
+            <ul>
+                <li>
+                    <em>
+                        <img src="images/hot.png" alt="">
+                    </em>
+                    <img src="images/pic.png" alt="">
+                    <h4>
+                        Think PHP 5.0 博客系统实战项目演练
+                    </h4>
+                    <div class="info">
+                        <span>高级</span> · 1125人学习
+                    </div>
+                </li>
+                <li><img src="images/pic.png" alt="">
+                    <h4>
+                        Think PHP 5.0 博客系统实战项目演练
+                    </h4>
+                    <div class="info">
+                        <span>高级</span> · 1125人学习
+                    </div>
+                </li>
+                <li><img src="images/pic.png" alt="">
+                    <h4>
+                        Think PHP 5.0 博客系统实战项目演练
+                    </h4>
+                    <div class="info">
+                        <span>高级</span> · 1125人学习
+                    </div>
+                </li>
+                <li><img src="images/pic.png" alt="">
+                    <h4>
+                        Think PHP 5.0 博客系统实战项目演练
+                    </h4>
+                    <div class="info">
+                        <span>高级</span> · 1125人学习
+                    </div>
+                </li>
+                <li><img src="images/pic.png" alt="">
+                    <h4>
+                        Think PHP 5.0 博客系统实战项目演练
+                    </h4>
+                    <div class="info">
+                        <span>高级</span> · 1125人学习
+                    </div>
+                </li>
+                <li><img src="images/pic.png" alt="">
+                    <h4>
+                        Think PHP 5.0 博客系统实战项目演练
+                    </h4>
+                    <div class="info">
+                        <span>高级</span> · 1125人学习
+                    </div>
+                </li>
+                <li><img src="images/pic.png" alt="">
+                    <h4>
+                        Think PHP 5.0 博客系统实战项目演练
+                    </h4>
+                    <div class="info">
+                        <span>高级</span> · 1125人学习
+                    </div>
+                </li>
+                <li><img src="images/pic.png" alt="">
+                    <h4>
+                        Think PHP 5.0 博客系统实战项目演练
+                    </h4>
+                    <div class="info">
+                        <span>高级</span> · 1125人学习
+                    </div>
+                </li>
+                <li><img src="images/pic.png" alt="">
+                    <h4>
+                        Think PHP 5.0 博客系统实战项目演练
+                    </h4>
+                    <div class="info">
+                        <span>高级</span> · 1125人学习
+                    </div>
+                </li>
+                <li><img src="images/pic.png" alt="">
+                    <h4>
+                        Think PHP 5.0 博客系统实战项目演练
+                    </h4>
+                    <div class="info">
+                        <span>高级</span> · 1125人学习
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- 编程入门模块 -->
+    <div class="code w">
+        <h6>编程入门</h6>
+        <div class="type">
+            <ul>
+                <li><a href="#">热门</a></li>
+                <li><a href="#">初级</a></li>
+                <li><a href="#">中级</a></li>
+                <li><a href="#">高级</a></li>
+            </ul>
+        </div>
+        <span>查看全部</span>
+    </div>
+
+    <!-- PHP入门模块 -->
+    <div class="php w">
+        <div class="study"><img src="images/php.jpg" alt=""></div>
+        <div class="python"><img src="images/python.png" alt=" "></div>
+        <ul>
+            <li>
+                <img src="images/pic.png" alt="">
+                <h5>Android Hybrid APP开发实战 HS+原生</h5>
+                <div class="more"><span>高级</span>·1125人在学习</div>
+            </li>
+            <li>
+                <img src="images/pic.png" alt="">
+                <h5>Android Hybrid APP开发实战 HS+原生</h5>
+                <div class="more"><span>高级</span>·1125人在学习</div>
+            </li>
+            <li>
+                <img src="images/pic.png" alt="">
+                <h5>Android Hybrid APP开发实战 HS+原生</h5>
+                <div class="more"><span>高级</span>·1125人在学习</div>
+            </li>
+            <li>
+                <img src="images/pic.png" alt="">
+                <h5>Android Hybrid APP开发实战 HS+原生</h5>
+                <div class="more"><span>高级</span>·1125人在学习</div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- 尾部模块 -->
+    <div class="footer">
+        <div class="w">
+            <div class="copyright">
+                <img src="images/logo.png" alt="">
+                <p>这是一段文字</p>
+                <a href="#" class="app">下载APP</a>
+            </div>
+            <div class="links">
+                <dl>
+                    <dt><a href="#">关于学成网</a></dt>
+                    <dd><a href="#">关于</a></dd>
+                    <dd><a href="#">团队管理</a></dd>
+                    <dd><a href="#">工作机会</a></dd>
+                    <dd><a href="#">客户服务</a></dd>
+                    <dd><a href="#">帮助</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">关于学成网</a></dt>
+                    <dd><a href="#">关于</a></dd>
+                    <dd><a href="#">团队管理</a></dd>
+                    <dd><a href="#">工作机会</a></dd>
+                    <dd><a href="#">客户服务</a></dd>
+                    <dd><a href="#">帮助</a></dd>
+                </dl>
+                <dl>
+                    <dt><a href="#">关于学成网</a></dt>
+                    <dd><a href="#">关于</a></dd>
+                    <dd><a href="#">团队管理</a></dd>
+                    <dd><a href="#">工作机会</a></dd>
+                    <dd><a href="#">客户服务</a></dd>
+                    <dd><a href="#">帮助</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

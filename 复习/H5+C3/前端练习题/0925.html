@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>应用题</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        .clearfix::after,
+        .clearfix::before{
+            content: '';
+            display: table;
+            clear: both;
+        }
+        .circle-wrapper{
+            width: 500px;
+            height: 500px;
+            margin: 100px auto;
+            background-color: #000000;
+        }
+        .circle{
+            position: relative;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin: 100px auto;
+            background-color: #fff;
+        }
+        .circle li{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            border: 10px solid #4db6ac;
+            border-bottom-color: transparent;
+            border-right-color: transparent;
+            border-radius: 50%;
+            background-color: transparent;
+
+        }
+        .circle li:nth-child(1){
+            width: 50px;
+            height: 50px;
+            animation: turn 1s linear infinite;
+        }
+        .circle li:nth-child(2){
+            width: 60px;
+            height: 60px;
+            animation: turn 2s linear infinite;
+        }
+        .circle li:nth-child(3){
+            width: 70px;
+            height: 70px;
+            animation: turn 3s linear infinite;
+        }
+        @keyframes turn{
+            from{
+                transform: rotateZ(0);
+            }
+            to{
+                transform: rotateZ(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="circle-wrapper clearfix">
+    <div class="circle">
+        <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

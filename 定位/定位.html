@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 定位：将盒子定在某一个位置=定位模式+边偏移
+        定位模式用于指定 一个元素在文档中的定位方式，边偏移则决定了该元素的最终位置 */
+        /* 定位模式通过CSS的position属性来设置
+        static 静态定位 ：无位偏移，相当于标准流
+
+        relative 相对定位 ：（1）根据自己原来的位置作为参照点的（自恋型）
+                           （2）原来在标准流的位置继续占有，后面的盒子位置不变
+                           （3）因此相对定位并没有脱标，它最典型的应用是给绝对定位当爹的
+        absolute 绝对定位： （1）根据父元素作为参照点（拼爹型）
+                           （2）如果没有父元素或者父元素没有定位，则以浏览器为准进行定位（Document文档）
+                           （3）如果父元素有定位（相对，绝对，固定），则以最近一级的有定位的父元素为参考点移动位置
+        fixed 固定定位 ：   （1）在浏览器页面滚动时元素的位置不会改变
+                           （2）以浏览器的可视窗口为基准
+                           （3）和绝对定位一样不占有原来的位置
+                                    小技巧：固定在版心的右侧
+                                    先left: 50%;
+                                    再margin-left：版心宽度的一半：
+        sticky 粘性定位：  （1）以浏览器的可视窗口为参照点元素（固定定位特点）
+                          （2）会占有原先的位置（相对定位特点）
+                          （3）必须添加top，left，right，bottom其中一个才有效果
+            
+        */
+        .first {
+            position: relative;
+            top: 100px;
+            left: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+        }
+
+        .second {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+        }
+
+        .yeye {
+            position: relative;
+            width: 800px;
+            height: 800px;
+            background-color: black;
+        }
+
+        .father {
+
+            width: 500px;
+            height: 500px;
+            background-color: skyblue;
+        }
+
+        .son {
+            position: absolute;
+            top: 0;
+            right: 100px;
+            width: 200px;
+            height: 200px;
+            background-color: blueviolet;
+        }
+
+        /* 子绝父相
+        （1）子级绝对定位，不会占有位置，可以放到父盒子的任意地方，不影响其他兄弟盒子
+        （2）父盒子需要加定位来限制子盒子在父盒子内显示 
+        （3）父盒子布局时，需要占有位置，因此父亲只能相对定位*/
+
+        .dj {
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+
+        .w {
+            width: 800px;
+            height: 1400px;
+            background-color: springgreen;
+            margin: 0 auto;
+        }
+
+        .fixed {
+            position: fixed;
+            width: 50px;
+            height: 50px;
+            background-color: yellow;
+            top: 0;
+            left: 50%;
+            margin-left: 400px;
+        }
+
+        .nav {
+            position: sticky;
+            top: 0;
+            width: 200px;
+            height: 50px;
+            background-color: orange;
+        }
+    </style>
+
+<body>
+    <!-- 相对定位 -->
+    <div class="first"></div>
+    <div class="second"></div>
+    <!-- 子绝父相 -->
+    <div class="yeye">
+        <div class="father">
+            <div class="son"></div>
+        </div>
+    </div>
+    <!-- 固定定位 -->
+    <div class="dj">
+        <img src="images/pvp.png" alt="">
+    </div>
+    <!-- 小技巧 -->
+    <div class="w"></div>
+    <div class="fixed"></div>
+    <!-- 粘性定位 -->
+    <div class="nav"></div>
+    <div class="w"></div>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            span{
+                width: 100px;
+                height: 100px;
+                background-color:pink;
+            }
+    </style>
+</head>
+<body>
+    <!-- 行内元素只能容纳文本或其他行内元素 ，不能放块元素
+    行内元素有a,strong,b,em,i,del,s,ins,u,span-->
+    <span>pink老师</span> <strong>pink老师</strong>
+    <span>pink老师</span> <strong>pink老师</strong>
+    <!-- 链接里不能再放链接，
+        特殊情况链接a里面可以放块级元素，但是给a转换一下块级模块最安全 -->
+    <a href="http://baidu.com">百度一下</a>
+</body>
+</html>

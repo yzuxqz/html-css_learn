@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    ul{
+        width: 1000px;
+        height: 1000px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        align-items: stretch;
+    }
+    li{
+        background-color: red;
+        width: 300px;
+        height: 300px;
+    }
+</style>
+<body>
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</body>
+<script>
+    window.onload=function () {
+        setInterval(fn1,500)
+        setInterval(fn1(),500)
+        function fn1() {
+            console.log(1)
+            return function () {
+                console.log(2)
+            }
+        }
+    }
+</script>
+</html>

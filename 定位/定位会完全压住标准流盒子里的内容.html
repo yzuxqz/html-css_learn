@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            /* 浮动元素只会压住它下面的标准流的盒子，但是不会压住下面标准流盒子里的文字（图片） */
+            /* float: left; */
+            /* 绝对定位会压住所有内容 */
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background-color: brown;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <!-- 浮动压住了p，但是没有压住文字 -->
+    <p>dhfsjhfkjashfkash</p>
+</body>
+
+</html>

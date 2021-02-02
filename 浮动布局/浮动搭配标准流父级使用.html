@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 1200px;
+            height: 460px;
+            background-color: sienna;
+            margin: 0 auto;
+            
+
+        }
+
+        .left {
+            width: 230px;
+            height: 460px;
+            background-color: red;
+            float: left;
+        }
+
+        .right {
+            width: 970px;
+            height: 460px;
+            background-color: skyblue;
+            float: right;
+        }
+    </style>
+</head>
+<!-- 网页布局一般策略
+先用标准流的父元素排列上下位置
+之后内部子元素采取浮动排列左右位置 -->
+
+<body>
+    <div class="box">
+        <div class="left">左侧</div>
+        <div class="right">右侧</div>
+    </div>
+</body>
+
+</html>

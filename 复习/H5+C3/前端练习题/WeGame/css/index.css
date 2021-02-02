@@ -1,0 +1,524 @@
+.clearfix::before,
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+a {
+    text-decoration: none;
+    color: #878787;
+}
+
+body {
+    background-color: #343437;
+}
+
+/*头部*/
+.header {
+    height: 80px;
+    background-color: #191919;
+}
+
+.logo {
+    float: left;
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 233px;
+    height: 40px;
+    background: url("../../public/wegame-logo-40.776e17ff.png") no-repeat;
+    text-indent: -999px;
+    overflow: hidden;
+}
+
+.header-nav {
+    float: left;
+    margin-left: 228px;
+    height: 80px;
+}
+
+.header-nav li {
+    float: left;
+    margin-right: 24px;
+
+}
+
+.header-nav li:nth-child(1) a {
+    color: #FFFFFF;;
+}
+
+.header-nav a {
+    display: block;
+    width: 88px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.header-nav a:hover {
+    color: #FFFFFF;
+}
+
+.header-nav li:nth-child(1) a {
+    width: 72px;
+    background-color: #353535;
+}
+
+.header-nav-more {
+    float: right;
+    margin-right: 18px;
+}
+
+.header-nav-more li {
+    float: left;
+    width: 80px;
+    height: 80px;
+    line-height: 79px;
+    text-align: center;
+}
+
+.header-nav-more li a {
+    font-size: 13px;
+}
+
+.header-nav-more li a:hover {
+    color: #ffffff;
+}
+
+.header-nav-more li:nth-child(2) {
+    width: 105px;
+}
+
+.header-nav-more .download {
+    display: block;
+    margin-top: 21px;
+    box-sizing: border-box;
+    width: 105px;
+    height: 38px;
+    margin-left: 10px;
+    line-height: 35px;
+    border: 1px solid #303030;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.header-nav-more .download:hover {
+    color: black;
+    background-color: #ffc800;
+}
+
+/*搜索区*/
+.search {
+    height: 50px;
+    background-color: #424246;
+}
+
+.choice {
+    width: 500px;
+    float: left;
+    margin-left: 250px;
+}
+
+.choice li {
+    float: left;
+}
+
+.choice li:nth-child(1) a {
+    font-weight: 700;
+}
+
+
+.choice li a {
+    font-size: 15px;
+    text-align: center;
+    line-height: 50px;
+    color: #dadada;
+    padding: 20px;
+}
+
+.choice li:nth-child(3) i {
+    font-weight: 700;
+    color: white;
+}
+
+.choice li:nth-child(3) a {
+    padding-right: 5px;
+}
+
+.hot-search {
+    float: left;
+    height: 50px;
+    margin-left: 54px;
+}
+
+.hot-search li {
+    float: left;
+}
+
+.hot-search li:nth-child(even) {
+    width: 1px;
+    height: 11px;
+    background-color: #636366;
+    margin: 19px 14px;
+}
+
+.hot-search li a {
+    color: white;
+    font-size: 13px;
+    line-height: 50px;
+}
+
+.hot-search li:nth-child(5) a {
+    color: #f69c00;
+    font-weight: 700;
+}
+
+.search-btn {
+    box-sizing: border-box;
+    border-radius: 20px;
+    float: left;
+    width: 240px;
+    height: 32px;
+    margin-top: 9px;
+    margin-left: 22px;
+    border: 1px solid #ffb300;
+    overflow: hidden;
+}
+
+.search-btn:hover .i-wrapper {
+    background-color: #ffca28;
+}
+
+.search-btn input {
+    background-color: transparent;
+    width: 165px;
+    height: 28px;
+    color: white;
+    font-size: 12px;
+    padding-left: 20px;
+    outline: none;
+    border: none;
+}
+
+.i-wrapper {
+    float: right;
+    height: 32px;
+    width: 45px;
+    background-color: #a18636;
+    transition: all .5s;
+}
+
+.search-btn i {
+    font-size: 20px;
+    font-weight: 700;
+    color: #4d3c26;
+    padding-left: 11px;
+    line-height: 32px;
+}
+
+/*48小时动态*/
+.gameOnline {
+    position: relative;
+    float: left;
+    box-sizing: border-box;
+    margin-left: 46px;
+    margin-top: 30px;
+    padding: 15px;
+    width: 168px;
+    height: 321px;
+    background-color: #434347;
+}
+
+.gameOnline strong {
+    font-weight: 700;
+    font-size: 14px;
+    color: #b3b3b4;
+}
+
+.gameOnline h1 {
+    color: #d8d8d9;
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.xuanyuanjian img {
+    width: 140px;
+    height: 200px;
+}
+
+.countdown {
+    width: 140px;
+    height: 32px;
+    margin-top: 7px;
+    background-color: #5a5141;
+    font-size: 14px;
+    line-height: 32px;
+    text-align: center;
+    color: #ff6f00;
+}
+
+/*热门标签*/
+.popularTags {
+    position: absolute;
+    left: 0;
+    top: 341px;
+    box-sizing: border-box;
+    width: 168px;
+    height: 370px;
+    background-color: #434347;
+    padding: 0 12px;
+}
+
+.popularTags h4 {
+    height: 47px;
+    border-bottom: 1px solid #56565a;
+    font-weight: 700;
+    color: #b3b3b4;
+    text-align: center;
+    line-height: 48px;
+}
+
+.hot-title {
+    margin-top: 15px;
+}
+
+.hot-title li {
+    box-sizing: border-box;
+    height: 30px;
+    width: 128px;
+    padding-left: 8px;
+}
+
+.hot-title li a {
+    color: #c8c8ca;
+    font-size: 12px;
+}
+
+.hot-title li a:hover {
+    color: #dd900a;
+}
+
+/*主要内容区*/
+.main {
+    position: relative;
+    float: left;
+    width: 1000px;
+    height: 390px;
+    margin-left: 50px;
+    margin-top: 30px;
+    background-color: #434347;
+}
+
+.menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 214px;
+    height: 390px;
+    backdrop-filter: blur(10px) brightness(110%);
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.menu li {
+    height: 53px;
+}
+
+.menu li:nth-child(2) {
+    position: relative;
+    height: 72px;
+    background-color: #7c531d;
+}
+.activity1{
+    position: absolute;
+    top: 10px;
+    float: left;
+    width: 40px;
+    height: 20px;
+    font-size: 14px;
+    color: #f8dcea;
+    text-align: center;
+    line-height: 20px;
+    background-color: #f78829;
+    transform: skewX(-15deg)
+}
+.menu .CFHD{
+    display: block;
+    width: 214px;
+    height: 72px;
+}
+.CFHD span:nth-of-type(1){
+    display: inline-block;
+    margin-top: 20px;
+    color: #ff8f00;
+}
+.menu li a {
+    color: #e0e0e0;
+    height: 53px;
+    line-height: 53px;
+    padding-left: 20px;
+}
+
+.photoExplanation {
+    width: 1000px;
+    height: 390px;
+}
+
+.box1 img {
+    width: 1000px;
+    height: 390px;
+}
+
+/*热点预告*/
+.hotSpotPreview {
+    position: relative;
+    float: left;
+    width: 1000px;
+    margin-top: 40px;
+    height: 495px;
+    margin-left: 264px;
+}
+
+.hotSpotPreview h4 {
+    width: 1000px;
+    color: #ffffff;
+    font-size: 30px;
+    height: 70px;
+    line-height: 70px;
+}
+
+.hot-list {
+    height: 425px;
+}
+
+.hot-list li {
+    position: relative;
+    float: left;
+    width: 184px;
+    height: 425px;
+    margin-right: 20px;
+}
+
+.hot-list li:last-child {
+    margin-right: 0;
+    overflow: hidden;
+}
+.we-img img {
+    width: 184px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.time {
+    font-size: 16px;
+    color: #d6d6d6;
+    font-weight: 700;
+    text-align: center;
+}
+
+.name {
+    font-size: 12px;
+    color: #9f9fa1;
+    padding-left: 61px;
+}
+
+.separate {
+    width: 184px;
+    margin-top: 12px;
+    margin-bottom: 30px;
+}
+
+.separate .left {
+    float: left;
+    width: 85px;
+    height: 2px;
+    background-color: #ffb300;
+}
+
+.separate .right {
+    position: absolute;
+    top: 44px;
+    right: -20px;
+    width: 105px;
+    height: 2px;
+    background-color: #ffb300;
+}
+
+.circle {
+    float: left;
+    width: 4px;
+    height: 2px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: #ffb300;
+}
+
+.img-more {
+    position: relative;
+    width: 184px;
+    height: 81px;
+    background-color: #434347;
+    box-sizing: border-box;
+    padding-left: 16px;
+}
+
+.img-more p {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 20px;
+    color: #d9d9da;
+}
+
+.img-more span {
+    font-size: 12px;
+    color: #9f9fa1;
+}
+
+.left-btn,
+.right-btn {
+    position: absolute;
+    width: 30px;
+    height: 70px;
+    top: 240px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 70px;
+    color: #cdcdce;
+    font-size: 18px;
+    font-weight: 700;
+    background-color: rgba(0, 0, 0, .2);
+}
+
+.left-btn {
+    left: -40px;
+}
+
+.right-btn {
+    right: -40px;
+}
+
+.left-btn:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.right-btn:hover {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.activity {
+    position: absolute;
+    top: -10px;
+    width: 40px;
+    height: 20px;
+    font-size: 14px;
+    color: #f8dcea;
+    text-align: center;
+    line-height: 20px;
+    background-color: #f78829;
+    transform: skewX(-15deg)
+}

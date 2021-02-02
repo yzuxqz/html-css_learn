@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .father{
+        width: 200px;
+        height: 200px;
+        background-color: slateblue;
+        margin-top: 50px;
+        /* border:1px solid transparent ; */
+        /* padding: 1px; */
+        overflow: hidden;
+    }
+    .son{
+        width: 20px;
+        height: 20px;
+        background-color: springgreen;
+        margin-top: 100px;
+    }
+    </style>
+
+</head>
+<body>
+    <!-- 1 -->
+    <!-- margin-top和margin-bottom取大的称谓垂直外边距的合并
+    解决方案：尽量只给一个盒子添加margin值 -->
+    <!-- 2 -->
+    <!-- 嵌套快元素导致垂直外边距塌陷 取大的 
+    解决方案：1.为父元素指定一个上边框
+                2.为父元素定义上内边距
+                3.为父元素添加overflow：hidden-->
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+</html>

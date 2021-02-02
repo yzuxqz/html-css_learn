@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 伪类选择器 权重为10 */
+        .father li:first-child {
+            background-color: blueviolet;
+        }
+
+        .father li:last-child {
+            background-color: pink;
+        }
+
+        .father li:nth-child(3) {
+            background-color: pink;
+        }
+
+        /* 隔行变色 */
+        .father li:nth-child(odd) {
+            background-color: black;
+        }
+
+        /* 用公式 nth-child(n) 必须跟n 每次加一往后运算
+        2n 偶数
+        2n+1 奇数
+        5n 5的倍数
+        n+5 从第5个开始到最后
+        -n+5 前5个*/
+        .father li:nth-child(n) {
+            background-color: green;
+
+        }
+
+        .father li:nth-of-type(n) {
+            background-color: greenyellow;
+        }
+
+        section div:nth-child(2) {
+            background-color: greenyellow;
+        }
+
+        /* section div:nth-of-type(1) {
+            background-color: hotpink;
+        } */
+
+        /* 区别 */
+        /*  */
+    </style>
+</head>
+
+<body>
+    <ul class="father">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <section>
+        <p>光头强</p>
+        <div>熊大</div>
+        <div>熊二</div>
+    </section>
+</body>
+
+</html>

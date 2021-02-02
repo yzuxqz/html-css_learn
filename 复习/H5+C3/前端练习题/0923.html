@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+        body{
+            background-color: #638303;
+        }
+        .book-wrapper{
+            position: relative;
+            margin: 200px auto;
+            width: 325px;
+            height: 434px;
+            perspective: 800px;
+            transition: all .5s;
+        }
+        .book-content{
+            position: absolute;
+            width: 325px;
+            height: 434px;
+            background-color: #fff;
+        }
+        .book-cover{
+            position: absolute;
+            width: 325px;
+            height: 434px;
+            background:url("./public/bgc.jpg") -230px 0 no-repeat;
+            background-size: auto 100%;
+            transform-origin: left;
+            transform-style: preserve-3d;
+            transition: all .5s;
+
+        }
+
+        .book-shadow{
+            position: absolute;
+            width: 325px;
+            height: 434px;
+            border-radius: 30px;
+            background-color: rgba(0,0,0,.1);
+            transition: all .5s;
+        }
+        .book-wrapper:hover{
+            transform: rotateZ(-30deg);
+        }
+        .book-wrapper:hover .book-cover{
+            transform: rotateY(-120deg);
+        }
+        .book-wrapper:hover .book-shadow{
+            transform: scale(1.3);
+        }
+    </style>
+</head>
+<body>
+<div class="book-wrapper">
+    <div class="book-shadow"></div>
+    <div class="book-content"></div>
+    <div class="book-cover"></div>
+</div>
+</body>
+</html>

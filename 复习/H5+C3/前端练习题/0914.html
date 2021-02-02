@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        list-style: none;
+    }
+    img{
+        vertical-align: top;
+    }
+    .main {
+        width: 740px;
+        height: 639px;
+        margin: 0 auto;
+    }
+
+    .left{
+        float: left;
+    }
+    .right{
+        float: right;
+    }
+    .left li,
+    .right li{
+        width: 360px;
+        height: 203px;
+        position: relative;
+        margin-bottom: 10px;
+    }
+    .right li:nth-child(2){
+        height: 426px;
+        margin-bottom: 0;
+    }
+    .main ul div{
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 30px;
+        padding-left: 40px;
+        color: #ffffff;
+        background-color: rgba(0,0,0,.5);
+    }
+</style>
+<body>
+<div class="main">
+    <div class="left">
+        <ul>
+            <li>
+                <img src="./public/1.jpg" alt="">
+                <div class="introduction">1</div>
+            </li>
+            <li>
+                <img src="./public/2.jpg" alt="">
+                <div class="introduction">2</div>
+            </li>
+            <li>
+                <img src="./public/3.jpg" alt="">
+                <div class="introduction">3</div>
+            </li>
+        </ul>
+    </div>
+    <div class="right">
+        <ul>
+            <li>
+                <img src="./public/4.jpg" alt="">
+                <div class="introduction">4</div>
+            </li>
+            <li>
+                <img src="./public/5.jpg" alt="">
+                <div class="introduction">5</div>
+            </li>
+        </ul>
+    </div>
+</div>
+
+
+
+</body>
+</html>
